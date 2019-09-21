@@ -9,5 +9,7 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
+
   # Add more helper methods to be used by all tests here...
 end
